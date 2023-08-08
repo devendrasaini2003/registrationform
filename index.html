@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registraction form</title>
+    <!-- all-css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Registration_start -->
+    <form id="registrationForm">
+        <h1>Registration Form</h1>
+        <div class="form_boxes">
+            <label for="name">Name:</label>
+            <input required type="text" id="name" placeholder="Enter Full Name">
+            <span class="required-message" id="nameRequired">Name is required.</span>
+        </div>
+        <div class="form_boxes">
+            <label for="email">Email:</label>
+            <input required type="email" id="email" placeholder="Enter Email">
+            <span class="required-message" id="emailRequired">Email is required.</span>
+        </div>
+        <div class="form_boxes">
+            <label for="password">Password:</label>
+            <input required type="password" id="password" placeholder="Enter Password">
+            <span class="required-message" id="passwordRequired">Password is required.</span>
+        </div>
+        <div class="form_boxes">
+            <label for="date-birth">Date of Birth:</label>
+            <input required type="date" id="dob">
+            <span class="required-message" id="dobRequired">Date of Birth is required.</span>
+        </div>
+        <div class="terms_condition">
+            <div>
+                <input required type="checkbox" id="terms">
+                <p>Accept Terms and Conditions</p>
+            </div>
+            <span class="required-message" id="termsRequired">You must accept the Terms and Conditions.</span>
+        </div>
+        <button type="button" onclick="submitForm()">SUBMIT</button>
+    </form>
+    <!-- Registration_end -->
+
+
+    <!-- entries_table_start  -->
+    <div class="entries_table">
+        <h2>Entries</h2>
+        <table id="entriesTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>DOB</th>
+                    <th>Accepted Terms?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--  values are dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <!-- entries_table_end  -->
+
+
+    <!-- all_js  -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
